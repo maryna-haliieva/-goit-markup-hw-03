@@ -43,6 +43,8 @@ ul {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .header-container {
@@ -117,12 +119,11 @@ ul {
 
 /* ===================== Hero ======================= */
 .hero {
-  outline: 1px solid tomato;
-
   background-color: var(--backgroung-hero-footer);
   color: var(--backgroung-main-color);
 }
 .hero-container {
+  outline: 1px solid tomato;
   text-align: center;
 }
 .hero-h {
@@ -168,6 +169,28 @@ h3 {
   color: var(--h-color);
 }
 
+.main-content {
+  padding-bottom: 94px;
+}
+.advantages-container {
+  outline: 1px solid tomato;
+}
+
+.advantages-list {
+  display: flex;
+}
+
+.advantages-list > .advantages-item {
+  flex-basis: calc(100% / 4);
+  margin-right: 30px;
+}
+.advantages-list > .advantages-item: :nth-child(4n+4) {
+  margin-right: 30px;
+}
+.advantages-list > .advantages-item:nth-child(n + 5) {
+  margin-top: 30px;
+}
+
 .advantages {
   text-transform: uppercase;
   font-weight: 700;
@@ -179,6 +202,8 @@ h3 {
   line-height: 1.88;
 }
 /* ===================== Особенности ======================= */
+.particuliarities-container {
+}
 .particuliarities {
   font-weight: 700;
   font-size: 36px;
@@ -188,6 +213,7 @@ h3 {
 .particuliarities-photo {
   width: 370px;
 }
+/* ===================== Наша команда======================= */
 .team-backgroung {
   background-color: var(--backgroung-team);
 }
@@ -210,7 +236,6 @@ h3 {
 /* =========================== Footer =============================== */
 .footer-background {
   background-color: var(--backgroung-hero-footer);
-  position: absolute;
   height: 648px;
 }
 .logo-footer-color {

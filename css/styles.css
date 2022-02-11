@@ -169,23 +169,30 @@ h3 {
   color: var(--h-color);
 }
 
-.main-content {
+.hero-container {
+  margin-bottom: 94px;
+}
+.main-content-section {
   padding-bottom: 94px;
 }
+.main-content-section:last-child {
+  padding-bottom: 0px;
+}
+
 .advantages-container {
   outline: 1px solid tomato;
 }
 
 .advantages-list {
   display: flex;
+  flex-wrap: wrap;
 }
-
 .advantages-list > .advantages-item {
-  flex-basis: calc(100% / 4);
+  flex-basis: calc((100% - 3 * 30px) / 4);
   margin-right: 30px;
 }
-.advantages-list > .advantages-item: :nth-child(4n+4) {
-  margin-right: 30px;
+.advantages-list > .advantages-item:nth-child(4n + 4) {
+  margin-right: 0px;
 }
 .advantages-list > .advantages-item:nth-child(n + 5) {
   margin-top: 30px;
@@ -201,15 +208,28 @@ h3 {
   font-size: 14px;
   line-height: 1.88;
 }
-/* ===================== Особенности ======================= */
+/* ===================== Чем мы занимаемся ======================= */
 .particuliarities-container {
+  outline: 1px solid tomato;
 }
-.particuliarities {
+.particuliarities-h {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
+.specialization-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.specialization-img > .particuliarities-photo {
+  flex-basis: calc((100% - 2 * 30px) / 3);
+  margin-right: 30px;
+}
+
 .particuliarities-photo {
   width: 370px;
 }
@@ -217,9 +237,21 @@ h3 {
 .team-backgroung {
   background-color: var(--backgroung-team);
 }
-.our-team {
+.team-container {
+  outline: 1px solid tomato;
 }
-.specialization-img {
+
+.our-team {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+.our-team > .our-team-list {
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  flex-basis: calc(100% - 4 * 30);
 }
 .teammate-photo {
   width: 270px;

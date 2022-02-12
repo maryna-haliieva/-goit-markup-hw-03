@@ -32,18 +32,29 @@ ul {
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  margin-left: 0px;
 }
+
 ul {
   padding-left: 0px;
 }
 
 img {
   display: block;
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 /* =================== Header ===================== */
-
 .container {
   width: 1200px;
   padding-right: 15px;
@@ -51,12 +62,11 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
-
 .header-container {
   outline: 1px solid tomato;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
 }
 
 .list {
@@ -77,13 +87,13 @@ img {
 
   color: var(--accent-color);
 }
-
 .logo-header-color {
   color: var(--logo-header-color);
 }
 
 .header-contacts-list {
   display: flex;
+  margin-left: auto;
 }
 .header-contacts {
   font-weight: 500;
@@ -110,7 +120,6 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
 .nav-list .item {
   outline: 1px solid tomato;
 }
@@ -131,11 +140,11 @@ img {
 .hero-container {
   outline: 1px solid tomato;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-h {
   text-align: center;
-  padding-top: 200px;
-  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -151,9 +160,9 @@ img {
   min-height: 50px;
   padding-right: 32px;
   padding-left: 32px;
-  margin-bottom: 200px;
-  cursor: pointer;
+  margin-top: 50px;
 
+  cursor: pointer;
   border: none;
   border-radius: 4px;
 
@@ -175,10 +184,8 @@ h3 {
   color: var(--h-color);
 }
 
-.hero-container {
-  margin-bottom: 94px;
-}
 .main-content-section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .main-content-section:last-child {
@@ -188,7 +195,6 @@ h3 {
 .advantages-container {
   outline: 1px solid tomato;
 }
-
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -203,7 +209,6 @@ h3 {
 .advantages-list > .advantages-item:nth-child(n + 5) {
   margin-top: 30px;
 }
-
 .advantages {
   text-transform: uppercase;
   font-weight: 700;
@@ -217,6 +222,7 @@ h3 {
 /* ===================== Чем мы занимаемся ======================= */
 .particuliarities-container {
   outline: 1px solid tomato;
+  padding-top: 0;
 }
 .particuliarities-h {
   margin-bottom: 50px;
@@ -226,19 +232,22 @@ h3 {
   line-height: 1.16;
   text-align: center;
 }
+
 .specialization-img {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.particuliarities-photo {
+  width: 370px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 .specialization-img > .particuliarities-photo {
   flex-basis: calc((100% - 3 * 30px) / 3);
-  margin-right: 30px;
 }
 
-.particuliarities-photo {
-  width: 370px;
-}
 /* ===================== Наша команда======================= */
 .team-backgroung {
   background-color: var(--backgroung-team);
@@ -248,17 +257,17 @@ h3 {
 }
 
 .our-team {
-  outline: 1px solid tomato;
-
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
-  margin-right: -30px;
+  margin-left: -30px;
+}
+.our-team-list {
+  margin-top: 30px;
+  margin-left: 30px;
 }
 .our-team > .our-team-list {
-  margin-right: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 4 * 30) / 4);
+  flex-basis: calc((100% - 4 * 30px) / 4);
 }
 .teammate-photo {
   width: 270px;
@@ -306,12 +315,16 @@ h3 {
 .project-container {
   outline: 1px solid tomato;
 }
-.project-container {
-  margin-top: 94px;
-}
 .radio-button {
-  background-color: var(--backgroung-team);
-  color: var(--h-color);
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
 
   font-family: inherit;
   font-weight: 500;
@@ -319,10 +332,11 @@ h3 {
   line-height: 1.63;
   text-align: center;
 
-  border: none;
-  border-radius: 4px;
-
-  cursor: pointer;
+  background-color: var(--backgroung-team);
+  color: var(--h-color);
+}
+.filters-list .radio-button-list:not(:first-child) {
+  margin-left: 8px;
 }
 .filters-list .radio-button.current,
 .radio-button:hover,
@@ -335,12 +349,10 @@ h3 {
 
   display: flex;
   justify-content: center;
-  margin-right: -8px;
   margin-bottom: 50px;
 }
-.projects-list {
- outline: 1px solid tomato;
 
+.projects-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
@@ -349,11 +361,7 @@ h3 {
 .projects-list > .project-list-item {
   margin-right: 30px;
   margin-top: 30px;
-  flex-basis: calc((100% - 3 * 30) / 3);
-} 
-}
-.radio-button-list {
-  margin-right: 8px;
+  flex-basis: calc((100% - 3 * 30px) / 3);
 }
 .projects-photo {
   width: 370px;

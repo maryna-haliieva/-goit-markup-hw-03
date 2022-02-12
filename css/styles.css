@@ -29,12 +29,17 @@ h2,
 h3,
 p,
 ul {
-  padding-right: 0px;
-  padding-left: 0px;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
+}
+ul {
+  padding-left: 0px;
+}
+
+img {
+  display: block;
 }
 
 /* =================== Header ===================== */
@@ -93,6 +98,9 @@ ul {
   color: var(--accent-color);
 }
 
+.nav-list {
+  display: flex;
+}
 .nav-list .list-menu.current {
   color: var(--accent-color);
 }
@@ -102,9 +110,7 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.nav-list {
-  display: flex;
-}
+
 .nav-list .item {
   outline: 1px solid tomato;
 }
@@ -191,7 +197,7 @@ h3 {
   flex-basis: calc((100% - 3 * 30px) / 4);
   margin-right: 30px;
 }
-.advantages-list > .advantages-item:nth-child(4n + 4) {
+.advantages-list > .advantages-item:nth-child(4n) {
   margin-right: 0px;
 }
 .advantages-list > .advantages-item:nth-child(n + 5) {
@@ -226,7 +232,7 @@ h3 {
   justify-content: space-around;
 }
 .specialization-img > .particuliarities-photo {
-  flex-basis: calc((100% - 2 * 30px) / 3);
+  flex-basis: calc((100% - 3 * 30px) / 3);
   margin-right: 30px;
 }
 
@@ -242,19 +248,24 @@ h3 {
 }
 
 .our-team {
+  outline: 1px solid tomato;
+
   display: flex;
   flex-wrap: wrap;
+  margin-top: -30px;
   margin-right: -30px;
-  margin-bottom: -30px;
 }
 .our-team > .our-team-list {
   margin-right: 30px;
-  margin-bottom: 30px;
-
-  flex-basis: calc(100% - 4 * 30);
+  margin-top: 30px;
+  flex-basis: calc((100% - 4 * 30) / 4);
 }
 .teammate-photo {
   width: 270px;
+}
+.teammate-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .teammate-name,
 .teammate-position {
@@ -263,12 +274,22 @@ h3 {
   text-align: center;
 }
 .teammate-name {
+  margin-bottom: 8px;
   font-weight: 500;
 }
 /* =========================== Footer =============================== */
 .footer-background {
   background-color: var(--backgroung-hero-footer);
-  height: 648px;
+}
+.footer-container {
+  outline: 1px solid tomato;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-adress-container {
+  outline: 1px solid tomato;
+  margin-top: 20px;
 }
 .logo-footer-color {
   color: var(--backgroung-main-color);
@@ -282,7 +303,12 @@ h3 {
   color: var(--footer-adress-transparent);
 }
 /* =================== Projects ===================== */
-
+.project-container {
+  outline: 1px solid tomato;
+}
+.project-container {
+  margin-top: 94px;
+}
 .radio-button {
   background-color: var(--backgroung-team);
   color: var(--h-color);
@@ -304,8 +330,42 @@ h3 {
   background-color: var(--accent-color);
   color: var(--backgroung-main-color);
 }
+.filters-list {
+  outline: 1px solid tomato;
+
+  display: flex;
+  justify-content: center;
+  margin-right: -8px;
+  margin-bottom: 50px;
+}
+.projects-list {
+ outline: 1px solid tomato;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-right: -30px;
+}
+.projects-list > .project-list-item {
+  margin-right: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 3 * 30) / 3);
+} 
+}
+.radio-button-list {
+  margin-right: 8px;
+}
 .projects-photo {
   width: 370px;
+}
+.project-description {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 .project-name {
   font-weight: 700;

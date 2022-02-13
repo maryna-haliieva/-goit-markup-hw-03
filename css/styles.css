@@ -67,7 +67,6 @@ img {
   border-bottom: 1px solid #ececec;
 }
 .header-container {
-  outline: 1px solid tomato;
   display: flex;
   align-items: center;
 }
@@ -78,8 +77,6 @@ img {
 }
 
 .logo {
-  outline: 1px solid tomato;
-
   margin-right: 93px;
   align-self: center;
 
@@ -126,7 +123,6 @@ img {
   padding-bottom: 32px;
 }
 .nav-list .item {
-  outline: 1px solid tomato;
   font-weight: 500;
 }
 .nav-list .item:not(:last-child),
@@ -135,7 +131,6 @@ img {
 }
 
 .header-contacts-list .item {
-  outline: 1px solid tomato;
   font-weight: 500;
 }
 
@@ -147,7 +142,6 @@ img {
   padding-bottom: 200px;
 }
 .hero-container {
-  outline: 1px solid tomato;
   text-align: center;
 }
 .hero-h {
@@ -197,9 +191,6 @@ h3 {
   padding-bottom: 94px;
 }
 
-.advantages-container {
-  outline: 1px solid tomato;
-}
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -226,7 +217,6 @@ h3 {
 }
 /* ===================== Чем мы занимаемся ======================= */
 .particuliarities-section {
-  outline: 1px solid tomato;
   padding-top: 0;
 }
 .particuliarities-h {
@@ -257,9 +247,6 @@ h3 {
 .team-backgroung {
   background-color: var(--backgroung-team);
 }
-.team-container {
-  outline: 1px solid tomato;
-}
 
 .our-team {
   display: flex;
@@ -270,8 +257,8 @@ h3 {
 .our-team-list {
   margin-top: 30px;
   margin-left: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-top: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
@@ -301,13 +288,10 @@ h3 {
   background-color: var(--backgroung-hero-footer);
 }
 .footer-container {
-  outline: 1px solid tomato;
-
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .footer-adress-container {
-  outline: 1px solid tomato;
   margin-top: 20px;
 }
 .logo-footer-color {
@@ -325,9 +309,7 @@ h3 {
   margin-bottom: 9px;
 }
 /* =================== Projects ===================== */
-.project-container {
-  outline: 1px solid tomato;
-}
+
 .radio-button {
   padding-top: 6px;
   padding-right: 22px;
@@ -358,8 +340,6 @@ h3 {
   color: var(--backgroung-main-color);
 }
 .filters-list {
-  outline: 1px solid tomato;
-
   display: flex;
   justify-content: center;
   margin-bottom: 50px;

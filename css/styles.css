@@ -305,6 +305,7 @@ h3 {
 .footer-adress {
   color: var(--footer-adress-transparent);
 }
+
 .footer-adress-container > .address-common-list:not(:last-child) {
   margin-bottom: 9px;
 }
